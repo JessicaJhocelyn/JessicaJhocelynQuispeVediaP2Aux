@@ -124,3 +124,14 @@ let equipo_ganador=final.filter(final => final.cuota == cuota_mas_baja);
 console.log(equipo_ganador);
 
          
+//8. Use un bucle para poder calcular la cuota (odd) promedio y mostrarlo en la 
+//consola
+
+let suma= 0;
+let cont = 0;
+for (let i in game.odds){
+  suma = suma + game.odds[i];
+  cont++;
+}
+let promedio=suma/cont;
+console.log(promedio);
